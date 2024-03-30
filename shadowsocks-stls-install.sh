@@ -2,7 +2,7 @@
 
 # install shadowsocks-libv
 sudo apt update 
-sudo apt install -y shadowsocks-libev
+sudo apt install -y shadowsocks-libev jq
 PORT=$(jq -r '.server_port' /etc/shadowsocks-libev/config.json)
 PASSWORD=$(jq -r '.password' /etc/shadowsocks-libev/config.json)
 METHOD=$(jq -r '.method' /etc/shadowsocks-libev/config.json)
